@@ -1,0 +1,79 @@
+{
+  "name": "servicesparrow",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.14.18",
+    "@mui/styles": "^5.11.12",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.21",
+    "@types/react": "^18.0.29",
+    "@types/react-dom": "^18.0.11",
+    "axios": "^1.3.2",
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.3",
+    "formik": "^2.2.9",
+    "gapi-script": "^1.2.0",
+    "jwt-decode": "^3.1.2",
+    "material-ui-search-bar": "^1.0.1",
+    "mdb-react-ui-kit": "^6.0.0",
+    "mobx": "^6.9.0",
+    "mobx-react-lite": "^3.4.3",
+    "mobx-state-tree": "^5.1.8",
+    "mui-one-time-password-input": "^2.0.1",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.6.0",
+    "react-dom": "^18.2.0",
+    "react-google-login": "^5.2.2",
+    "react-icons": "^4.8.0",
+    "react-responsive": "^9.0.2",
+    "react-router-dom": "^6.4.4",
+    "react-router-hash-link": "^2.4.3",
+    "react-scripts": "5.0.1",
+    "react-simple-toolbar": "^1.0.5",
+    "react-star-ratings": "^2.3.0",
+    "react-toastify": "^9.1.3",
+    "styled-components": "^5.3.9",
+    "sweetalert2": "^11.9.0",
+    "sweetalert2-react-content": "^5.0.7",
+    "typescript": "^4.9.5",
+    "vercel": "^28.18.3",
+    "web-vitals": "^2.1.4",
+    "yup": "^0.32.11"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/react-star-ratings": "^2.3.1",
+    "@types/styled-components": "^5.1.26",
+    "@types/uuid": "^9.0.3"
+  }
+}

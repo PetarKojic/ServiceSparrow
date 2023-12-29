@@ -1,0 +1,74 @@
+.card-body {
+    min-height: 300px;
+    min-width: 300px;
+    margin-right: 5px;
+   
+}
+@media (max-width: 450px) {
+   .card-body{
+    min-height: 300px;
+    max-width: 1000px;
+    margin-right: 5px;
+   
+   }
+   
+   }
+   .images-container {
+    display: flex;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    transition: scroll 0.3s ease-in-out;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  
+
+  
+  .nav-btn {
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    outline: inherit;
+    background-color: #AA222B;
+    border-radius: 6px;
+    height: 70px;
+    width: 30px;
+    margin: 5px;
+    align-self: center;
+  }
+  .card-enter {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  
+  .card-enter-active {
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  }
+  
+  .card-exit {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+  .card-exit-active {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  }
+  .moveable-card {
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .moveable-card-entering,
+  .moveable-card-exiting,
+  .moveable-card-exited {
+    transform: translateX(100%);
+  }
+  .moveable-card-entered {
+    transform: translateX(0);
+  }
+  
+  
