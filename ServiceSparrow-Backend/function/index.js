@@ -4,25 +4,25 @@ const sendNewMail = async (email, id) => {
     const hash = makeid(100) + `&&ID=${id}`
     console.log(hash)
     let transporter = nodemailer.createTransport({
-        host: process.env.HOST,
+        host: 'smtp.gmail.com',
+        service: 'gmail',
         port: 465,
         secure: true,
         requireTLS: true,
         auth: {
-            user: process.env.EMAIL,
-            pass: process.env.PASSWORD
+            user: 'helpdesk.servicesparrow@gmail.com',
+            pass: 'gosu shca uwnn rlej'
         }
     });
 
     let mailOptions = {
         from: 'no-reply@devstax.org',
         to: email,
-        subject: 'Password-Reset',
+        subject: 'Passwort zurücksetzen',
         html: `<div>
-           <h1>Here is the Link to Update your password.</h1>
-           <p>This is your one time activation link. It will be expired in a while</p>
+           <h2>Mit dem folgenden Link können Sie ihr Passwort zurücksetzen</h2>
+           <p>Bitte beachten Sie das der Link nach einer gewissen Zeit abläuft</p>
            <a href=${`http://localhost:3000/reset-password/${hash}`} target="_blank" >Reset Password</a>
-           
         </div>`
     };
 
@@ -53,34 +53,30 @@ const sendNewMail = async (email, id) => {
     catch (err) {
         console.log(err)
         return err
-
     }
-
-
-
 }
 
 const sendOTPEmail = async (email, otp) => {
     let transporter = nodemailer.createTransport({
-        host: process.env.HOST,
+        host: 'smtp.gmail.com',
+        service: 'gmail',
         port: 465,
         secure: true,
         requireTLS: true,
         auth: {
-            user: process.env.EMAIL,
-            pass: process.env.PASSWORD
+            user: 'helpdesk.servicesparrow@gmail.com',
+            pass: 'gosu shca uwnn rlej'
         }
     });
 
     let mailOptions = {
-        from: 'no-reply@devstax.org',
+        from: 'helpdesk.servicesparrow@gmail.com',
         to: email,
-        subject: 'Activate Your Account',
+        subject: 'Ihr Aktivierungscode',
         html: `<div>
-           <h1>Here is the OTP to activate your account.</h1>
-           <p>This is your one time activation. It will be expired in a while</p>
+           <h1>Hier finden Sie Ihren Aktivierungscode um Ihren Account zu aktivieren</h1>
+           <p>Dieser Code wird nach einer gewissen Zeit ablaufen</p>
            <h2>${otp}</h2>
-           
         </div>`
     };
 
