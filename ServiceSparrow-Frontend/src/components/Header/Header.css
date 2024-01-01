@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fcfcfc;
+  border-bottom: 1px solid #D6D6D6;
+
+}
+
+.container {
+  width:90%;
+  margin: 0 auto;
+  padding: 0px !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%
+
+
+}
+
+.navbar {
+  height: 80px;
+  background-color: #FFF;
+  position: relative;
+  z-index: 1000;
+width: 90%;
+margin: auto;
+justify-content: center;
+align-items: center;
+
+
+
+
+}
+.nav-container{
+  border-bottom: 1px solid #D6D6D6;
+  width: 100%;
+  padding: 5px;
+
+}
+@media (max-width: 768px) {
+  .navbar {
+    width: 100%;
+    margin: auto;  }
+    
+}
+.con-po{
+  width: 80%;
+}
+
+.logo {
+  width: 300px;
+  height: 60px;
+ margin-top: -15px;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.nav-elements {
+  padding: 0px;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+ 
+
+}
+.autocomplete-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-elements ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  
+ 
+}
+
+.nav-elements ul li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.multi-drop-back {
+  background-color: #F2F5F9;
+}
+
+.nav-elements ul a {
+  font-size: 12px;
+  font-weight: 400;
+  color: #2f234f;
+  text-decoration: none;
+ 
+}
+
+.nav-elements ul a.active {
+  color: #574c4c;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-elements ul a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #574c4c;
+}
+
+@media (max-width: 768px) {
+  .nav-elements ul li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-elements {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background-color: #F2F5F9;
+    width: 0px;
+    height: calc(100vh - 60px);
+    transition: all 0.3s ease-in;
+    overflow: hidden;
+
+  }
+
+  .nav-elements.active {
+    width: 270px;
+  }
+
+  .nav-elements ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-elements ul li {
+    margin-right: unset;
+    margin-top: 22px;
+  }
+}
