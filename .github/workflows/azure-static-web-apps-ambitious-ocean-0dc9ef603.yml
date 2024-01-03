@@ -19,7 +19,7 @@ jobs:
         with:
           submodules: true
           lfs: false
-      - run: npm install --production
+      - run: npm install --omit=dev
       - run: npm run build 
         env: 
           CI: ""
