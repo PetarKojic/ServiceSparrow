@@ -19,7 +19,7 @@ jobs:
         with:
           submodules: true
           lfs: false
-      - run: npm install --omit=dev
+      - run: npm install --legacy-peer-deps
       - run: npm run build 
         env: 
           CI: ""
