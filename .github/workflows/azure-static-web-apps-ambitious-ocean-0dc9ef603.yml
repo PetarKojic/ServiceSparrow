@@ -19,6 +19,10 @@ jobs:
         with:
           submodules: true
           lfs: false
+      - run: npm install --production
+      - run: npm run build 
+        env: 
+          CI: ""
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
@@ -32,10 +36,7 @@ jobs:
           api_location: "" # Api source code path - optional
           output_location: "build" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
-      - run: npm install --production
-      - run: npm run build 
-        env: 
-          CI: ""
+      
       
 
   close_pull_request_job:
