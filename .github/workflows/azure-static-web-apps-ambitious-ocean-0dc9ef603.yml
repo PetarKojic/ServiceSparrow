@@ -32,8 +32,10 @@ jobs:
           api_location: "" # Api source code path - optional
           output_location: "build" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
+      - run: npm install --production
+      - run: npm run build 
         env: 
-          NPM_CONFIG_LEGACY_PEER_DEPS: "true"
+          CI: ""
       
 
   close_pull_request_job:
