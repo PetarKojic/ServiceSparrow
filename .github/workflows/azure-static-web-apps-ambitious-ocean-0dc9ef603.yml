@@ -33,7 +33,7 @@ jobs:
           output_location: "build" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
         env:
-          NPM_CONFIG_LEGACY_PEER_DEPS: "true"
+          run: npm ci
           CI: "false"
       
       
