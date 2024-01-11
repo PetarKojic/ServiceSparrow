@@ -108,7 +108,7 @@ const Register = () => {
                     <HeadingTop>Sign up</HeadingTop>
                     <form onSubmit={handleSubmit}>
                         <div style={{ marginTop: 10 }}>
-                            <Input id={'email'} width={'100%'} label='Email address' value={values.email} onChange={handleChange} placeholder='MaxMustermann@gmail.com'  />
+                            <Input id={'email'} width={'100%'} label='Email address' value={values.email} onChange={handleChange} placeholder='maxMustermann01@gmail.com'  />
                             <ErrorText>{errors.email}</ErrorText>
 
                             <div style={{ display: 'flex', flexDirection: 'row' }}>

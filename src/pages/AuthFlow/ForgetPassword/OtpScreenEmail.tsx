@@ -79,7 +79,7 @@ const OtpScreenEmail = () => {
                     <SubHeading>No worries! Just enter your email and we’ll send you a new OTP.</SubHeading>
                     <form onSubmit={handleSubmit}>
                     <div style={{ marginTop: 10 }}>
-                        <Input id={'email'} width={'100%'} label='Email address' value={values.email} onChange={handleChange} placeholder='Johndoe11gmail.com'  />
+                        <Input id={'email'} width={'100%'} label='Email address' value={values.email} onChange={handleChange} placeholder='maxMustermann01@gmail.com'  />
                          <ErrorText>{errors.email}</ErrorText>
                     </div>
                     <ButtonComp load={load} fontSize={'14px'} title='Send OTP' onClick={() => ''} width={'100%'} />
