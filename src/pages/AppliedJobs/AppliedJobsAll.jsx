@@ -164,7 +164,7 @@ const AppliedjobsAll = ({ detailData }) => {
                                         data.status === 'COMPLETED' &&
                                         <>
                                             <div style={{ display: 'flex', flexDirection: 'row', textAlign: 'left' }}>
-                                                <RatingJobs>Freelancer Review:</RatingJobs>
+                                                <RatingJobs>Customer Review:</RatingJobs>
                                                 <div
                                                     style={{
                                                         display: "flex",
@@ -212,7 +212,7 @@ const AppliedjobsAll = ({ detailData }) => {
                                         data.status === 'COMPLETED' &&
                                         <>
                                             <div style={{ display: 'flex', flexDirection: 'row', textAlign: 'left' }}>
-                                                <RatingJobs>Freelancer Review:</RatingJobs>
+                                                <RatingJobs>Customer Review:</RatingJobs>
                                                 <div
                                                     style={{
                                                         display: "flex",

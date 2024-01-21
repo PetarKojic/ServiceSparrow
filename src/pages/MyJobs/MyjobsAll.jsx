@@ -157,7 +157,7 @@ const MyjobsAll = () => {
                                     <PositionJob>
                                         <PriceJob><MonetizationOnIcon />{data.price}</PriceJob>
                                         <PostedBy>Posted By: {data.userId && `${data.userId.first_name} ${data.userId.last_name}`}</PostedBy>
-                                        {data.status !== "OPEN" && <PostedBy>Freelancer: {data.jobHolder && `${data.jobHolder.first_name} ${data.jobHolder.last_name}`}</PostedBy>}
+                                        {data.status !== "OPEN" && <PostedBy>Customer: {data.jobHolder && `${data.jobHolder.first_name} ${data.jobHolder.last_name}`}</PostedBy>}
                                     </PositionJob>
                                     {data.status === 'COMPLETED' ?
                                         <Chip label="Completed" color="success" style={{ width: isMobile ? '20%' : '40%' }} />
